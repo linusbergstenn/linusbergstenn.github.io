@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f4f4f4;
+}
+
+nav .title {
+  font-family: "Patrick Hand", cursive;
+}
+
+nav .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+}
+
+nav div,
+nav h1 {
+  padding: 0.6rem;
+}
+
+header .header--content {
+  position: relative;
+  width: 100vw;
+  height: 80vh;
+  background-image: url(../img/car-wash-3960877_1920.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header .header--content .title-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header--content .title-container div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header--content .title-container div h1 {
+  font-family: "Patrick Hand", cursive;
+  font-size: 6rem;
+  -webkit-box-shadow: rgba(244, 244, 244, 0.5) 0px 1px;
+          box-shadow: rgba(244, 244, 244, 0.5) 0px 1px;
+}
+
+header .header--content .title-container div p {
+  font-size: 1.5rem;
+}
+
+header .header--content .title-container div h1,
+header .header--content .title-container div p {
+  color: #f4f4f4;
+}
+
+main section {
+  min-height: 50vh;
+  border: solid black 1px;
+}
+
+main section + section {
+  margin-top: 0.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    height: 100vh;
+    width: 100vw;
+  }
+  nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #f4f4f4;
+  }
+  nav .title {
+    font-family: "Patrick Hand", cursive;
+  }
+  nav .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  nav div,
+  nav h1 {
+    padding: 0.6rem 1.5rem;
+  }
+  header .header--content {
+    height: 75vh;
+  }
+}
+/*# sourceMappingURL=main.css.map */

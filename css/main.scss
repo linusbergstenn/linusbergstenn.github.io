@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  max-height: 100%;
+  max-width: 100%;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+}
+nav {
+  position: sticky;
+  top: 0;
+
+  z-index: 200;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: #f4f4f4;
+  .title {
+    font-family: "Patrick Hand", cursive;
+  }
+  .navigation {
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: uppercase;
+  }
+  div,
+  h1 {
+    padding: 0.6rem;
+  }
+}
+header {
+  .header--content {
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+    background-image: url(../img/car-wash-3960877_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    .title-container {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($color: #000000, $alpha: 0.6);
+
+      display: grid;
+      justify-content: center;
+      align-items: center;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1 {
+          font-family: "Patrick Hand", cursive;
+          font-size: 6rem;
+          box-shadow: rgba($color: #f4f4f4, $alpha: 0.5) 0px 1px;
+        }
+        p {
+          font-size: 1.5rem;
+        }
+        h1,
+        p {
+          color: #f4f4f4;
+        }
+      }
+    }
+  }
+}
+
+main {
+  section {
+    min-height: 50vh;
+    border: solid black 1px;
+
+    & + section {
+      margin-top: 0.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    height: 100vh;
+    width: 100vw;
+  }
+  nav {
+    position: sticky;
+    top: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #f4f4f4;
+    .title {
+      font-family: "Patrick Hand", cursive;
+    }
+    .navigation {
+      display: flex;
+      width: 50%;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    div,
+    h1 {
+      padding: 0.6rem 1.5rem;
+    }
+  }
+  header {
+    .header--content {
+      height: 75vh;
+    }
+  }
+}
